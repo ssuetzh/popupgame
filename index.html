@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopUp-Game</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section class="parent-box">
+
+        <div id="login_box" class="container-sm innerDiv">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter Your Email address" required />
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter Your Password" required />
+            </div>
+            <button onclick="login()" class="login btn  btn-primary">Login</button>
+            <button onclick="signup()" class="signup btn btn-primary">Signup</button>
+        </div>
+        <div id="welcome_box" class="center-2">
+            <div class="welcome">
+                <h1>welcome Gamer</h1>
+                <div class="img1">
+                    <img src="https://i.gifer.com/Buo.gif" width="10%">
+                </div>
+
+                <h2>
+                    <span id="user"></span>
+                </h2>
+                <p>Here are some key instruction you need to follow</p>
+                <p>Note: You will have to develop 10 levels </p>
+                <p> [Hint1: At second level balloons will be moving Left-Right Right-Left Top-Bottom Bottom-Top]</p>
+                <p>[Hint2: At Third level balloons color will be changing]</p>
+                As level increases the Balloon change color speed & Balloon movement speed Should also
+                increase to make it difficult for user to hover on specified color balloon.</p>
+            </div>
+
+            <div>
+                <p>
+                    <button class=" welcome btn btn-primary"><a class="start-game" href="./game.html">
+                        Start Game
+                    </a>
+                </button>
+                    <button onclick="logout()" class="logout btn btn-primary">Logout</button>
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <!--Sweet Alert JS  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- FireBase  -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Custom JavaScript -->
+    <script defer src="app.js"></script>
+
+</body>
+
+</html>

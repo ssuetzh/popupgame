@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./game.css">
+   <script src="./game.js"></script>
+   <title>Popup Baloon</title>
+</head>
+<body>
+    <style>
+        .element {
+            animation:
+                pulse 2s ease infinite alternate,
+                nudge 3s linear infinite alternate;
+         
+        }
+
+        @keyframes nudge {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(150px, 0);
+            }
+
+            80% {
+                transform: translate(-150px, 0);
+            }
+        }
+    </style>
+    <div class="wrapper">
+        <h1>Pop as many ballons as you can!!!!
+        </br>your mouse over them</h1>
+        <div id="all popped">
+       <img src="popup.gif" height="25%">
+    </div>
+    <h4>Pop orange Baloon</h4>
+    <h1>Level-3</h1>
+    <div id="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="blue"></div>
+    </div>
+
+</body>
+</html>
